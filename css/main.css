@@ -674,6 +674,15 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+#call-us-wrapper{
+  position: fixed;
+  right: 0;
+  top: 60%;
+  z-index: 9999;
+}
+#call-us-wrapper-mobile{
+  display: none;
+}
 
 /* Mobil Tasarım */
 @media screen and (max-width: 768px) {
@@ -870,6 +879,15 @@ body {
     .gallery-item.vertical,
     .gallery-item.square {
         height: 200px;
+    }
+    #call-us-wrapper{
+      display: none;
+    }
+    #call-us-wrapper-mobile{
+      display: block;
+    }
+    #call-us-wrapper-mobile .mobile-cta{
+      position:fixed;bottom:0;z-index:9999;background-color: #609464;color: #ffff;width: 100%;text-align: center;padding: 12px;
     }
 }
 
